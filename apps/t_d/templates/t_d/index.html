@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Time Display</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 't_d/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+    <body>
+    <div class="container">
+        <h4 id="box1">The Current Date and Time</h4>
+        <div id="box2">
+            <h2>{{ date }}</h2> 
+            <h2>{{ time }}</h2> 
+        </div>    
+    </div>
+    </body>
+</html>
